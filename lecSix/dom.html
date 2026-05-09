@@ -1,0 +1,100 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1 id="heading">Document object model</h1>
+    <h1>this is heading two</h1>
+   <form>
+      <input type="text" name="para">
+      <input type = "email" name ="para" id="">
+   </form>
+    <button onclick="alert('hello')">Alert</button>
+    <button onclick="changeText()">Change Heading</button>
+
+
+    <p class="info">This is a para</p>
+    <h2 class="info">Lorem ipsum dolor sit amet.</h2>
+    <b class="info">Lorem, ipsum.</b>
+    <div id="main">
+        <span>Hello good morning</span>
+        <h1 style="display: none;">Harman</h1>
+    </div>
+    <!-- <script src="index.js"></script> -->
+   <script>
+      // code1
+// console.log(document.body)
+// console.dir(document.body)
+
+// code2
+// var ele = document.getElementById("heading");
+// console.log(ele);
+
+// first method -> get by id.
+// var ele = document.getElementById("heading");
+// console.log(ele);
+// ele.textContent = "prabharman";
+
+// function changeText(){
+//     var ele = document.getElementById("heading");
+//     console.log(ele);
+//     ele.textContent = "prabharman";
+//     ele.style.backgroundColor = "red"
+// }
+// -> this is called function programing.
+
+// Interview question.
+// function changeText(){
+//     var ele = document.getElementById("main");
+//     console.log(ele.textContent);
+//     console.log(ele.innerText);
+//     console.log(typeof ele.innerHTML); 
+// }
+
+// function changeText(){
+//     var ele = document.getElementById("heading");
+//     // ele.innerText = "<h1>Hey</h1>"
+//     // ele.innerHTML = "<h1>Hey</h1>"
+//     // ele.textContent = "<h1>Hey</h1>"
+// }
+
+// 2nd method -> getElementsByClassName.
+// function changeText(){
+//     var ele = document.getElementsByClassName("info");
+//     console.log(ele);
+//     ele[0].style.backgroundColor = "green";
+//     ele[1].style.backgroundColor = "yellow";
+//     ele[2].style.backgroundColor = "red";
+//     // ele[3].style.backgroundColor = "pink"; 
+// }
+
+
+// 3nd method -> getElementsByTagName.
+// function changeText(){
+//     var ele = document.getElementsByTagName("h1");
+//     console.log(ele);
+//     for ( let i = 0; i < ele.length; i++){
+//         ele[i].style.backgroundColor = "pink";
+//         ele[i].style.border = "solid black 2px";
+//     }
+// }
+
+// 4nd method -> getElementsByName.
+// var ele = document.getElementsByName("para");
+// function changeText(){
+// console.log(ele);
+// var ele1 = document.getElementsByTagName("h1");
+// console.log(ele1);
+// }
+
+// var ele = document.getElementsByName("para");
+// function changeText(){
+//     ele[0].placeholder = "Enter userName.";
+//     ele[0].style.backgroundColor = "red";
+// }
+   </script>
+ </body>
+ </html>

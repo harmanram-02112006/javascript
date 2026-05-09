@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>previous element sibling</h1>
+    <div id="container">
+        <h1 id="child1">child1</h1>
+        <h1 id="child2">child2</h1>
+        <h1 id="child3">child3</h1>   
+    </div>
+    <button onclick="fun()">click me</button>
+    <script>
+        // var ele = document.getElementById("child1");
+        // function fun(){
+        //     console.log(ele.parentElement);
+        // }
+
+        var ele = document.getElementById("container");
+        function fun(){
+            // console.log(ele.parentElement);
+            // console.log(ele.children);
+            // console.log(ele.firstElementChild);
+            console.log(ele.lastElementChild);
+            console.log(ele.nextElementSibling);
+            console.log(ele.previousElementSibling);
+            
+            
+        }
+    </script>
+</body>
+</html>
