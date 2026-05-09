@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mouse Events</h1>
+    <!-- <button onclick="fun(event)">click</button> -->
+    <!-- <button onmousedown="fun(event)">click</button>-->
+     <!-- <button onmousemove="fun(event)">click</button> -->
+    <!-- <button onmouseleave="fun(event)">click</button> -->
+    <!-- <input type="text" onkeydown="fun(event)"> -->
+    <!-- <input type="text" onkeyup="fun(event)"> -->
+     <input type="text" onfocus="fun(event)" onblur="funn(event)" onchange="funnn(event)">
+    <script>
+        function fun(event){
+            event.target.style.background = "yellow"
+            // console.log(event)
+        }
+        function funn(event){
+            event.target.style.background = "red"
+            // console.log(event)
+        }
+        function funnn(event){
+            console.log("harman");
+        }
+    </script>
+</body>
+</html>
